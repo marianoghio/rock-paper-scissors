@@ -1,0 +1,173 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: rgb(0, 78, 114);
+}
+
+.score{
+    color: mintcream;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-around;
+       
+}
+
+#scoreSub{
+    text-align: center;
+    font-size: 20px;
+}
+
+#robotscore, #humanscore {
+    font-size: 30px;
+}
+
+.intro{
+    color: mintcream;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: space-around;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    
+    
+}
+
+
+
+.start{
+    padding:10px 100px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+.start:hover{
+    border: 2px solid rgb(97, 97, 97);
+    margin: -2px;
+    background-color: rgb(0, 78, 114);
+    color: mintcream;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.game{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.option{
+    font-size: 50px;
+    color: mintcream;
+    
+}
+
+#rock, #paper, #scissor{
+    padding:10px 100px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10%;
+    
+}
+
+
+#rock:hover, #paper:hover, #scissor:hover{
+    border: 2px solid rgb(97, 97, 97);
+    margin: -2px;
+    background-color: rgb(0, 78, 114);
+    color: mintcream;
+}
+
+
+
+#hands{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-around;
+}
+
+#computerhand{
+    margin: 0 50px;
+    transform: rotateY(180deg);
+}
+
+#humanhand{
+    margin: 0 50px;
+   
+}
+
+#ganador{
+    position: absolute;
+    font-size: 40px;
+    color: mintcream;
+    text-transform: uppercase;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+}
+
+.fade-out{
+    opacity: 0%;
+    pointer-events: none;
+    transition: ease-out;
+}
+
+.fade-in{
+    opacity: 1;
+    pointer-events: all;
+    
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0px);
+    }
+    12%{
+        transform: translateY(-60px);
+    }
+    25%{
+        transform: translateY(60px);
+    }
+    37%{
+        transform: translateY(-60px);
+    }
+    50%{
+        transform: translateY(60px);
+    }
+    
+    63%{
+        transform: translateY(-60px);
+    }
+    75%{
+        transform: translateY(60px);
+    }
+    88%{
+        transform: translateY(-60px);
+            }
+    100%{
+        transform: translateY(60px);
+    }
+
+}
